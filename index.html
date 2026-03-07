@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuljeet - Cyber Security & AI Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- FontAwesome for standard icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Devicon for original tech stack colored icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
+</head>
+
+<body>
+
+  <!-- CRT Scanline Overlay -->
+  <div class="scanlines"></div>
+
+  <!-- Background Audio Effect (placeholder) -->
+  <audio id="hackerSound" loop preload="auto">
+    <!-- Add a low hum or typing sound here later if preferred -->
+  </audio>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-content">
+      <a href="#home" class="logo">
+        <span class="glitch-text" data-text="KULJEET_">KULJEET_</span>
+      </a>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="assets/resume.pdf" class="btn btn-outline" download>Download CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <!-- Matrix Canvas -->
+    <canvas id="matrix"></canvas>
+
+    <div class="hero-content">
+      <div class="profile-container" data-aos="zoom-in" data-aos-duration="1500">
+        <!-- User can replace profile.jpg later -->
+        <div class="profile-glow"></div>
+        <img src="kuljeet.jpg" alt="Kuljeet Profile" class="profile-img"
+          onerror="this.src='https://api.dicebear.com/7.x/bottts/svg?seed=Kuljeet&backgroundColor=000000'">
+      </div>
+
+      <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">Hi, I'm <span class="highlight">Kuljeet</span></h1>
+
+      <div class="typing-container" data-aos="fade-up" data-aos-delay="400">
+        <p>I am a <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+      </div>
+
+      <p class="hero-desc" data-aos="fade-up" data-aos-delay="600">
+        B.Tech CSE Student (2025-2029). Passionate about problem solving, hacking, and building the future.
+      </p>
+
+      <div class="hero-buttons" data-aos="fade-up" data-aos-delay="800">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+      </div>
+
+      <div class="scroll-indicator a-bounce">
+        <i class="fas fa-chevron-down"></i>
+        <p>SCROLL TO INITIATE</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section-padding">
+    <div class="container">
+      <h2 class="section-title glitch-text" data-text="< About Me />" data-aos="fade-right">&lt; About Me /&gl;</h2>
+
+      <div class="about-grid">
+        <!-- Terminal Window Style -->
+        <div class="terminal-window" data-aos="fade-up" data-aos-delay="200">
+          <div class="terminal-header">
+            <div class="terminal-buttons">
+              <span class="close"></span>
+              <span class="minimize"></span>
+              <span class="maximize"></span>
+            </div>
+            <div class="terminal-title">bash -- kuljeet@localhost:~/about</div>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">kuljeet@root:~$</span> cat bio.txt</p>
+            <p class="typewriter-text delay-1">I am a B.Tech CSE student at Rungta International Skill University,
+              Bhilai. I enjoy understanding how technology works and using it to solve real-world problems creatively.
+            </p>
+            <p class="typewriter-text delay-2">I’m currently focused on web development and building my foundation in
+              HTML, CSS and JavaScript. Along with that, I am learning C and Java to strengthen my programming
+              fundamentals and logical thinking.</p>
+            <p class="typewriter-text delay-3">In the future, I want to combine web development with AI, Machine
+              Learning and Cyber Security to build smart, secure and useful applications.</p>
+            <p><span class="prompt">kuljeet@root:~$</span> <span class="cursor blink">_</span></p>
+          </div>
+        </div>
+
+        <div class="about-stats" data-aos="fade-left" data-aos-delay="400">
+          <div class="stat-box">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Web Dev</h3>
+            <p>Creating dynamic web apps</p>
+          </div>
+          <div class="stat-box">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Cyber Security</h3>
+            <p>Protecting data & systems</p>
+          </div>
+          <div class="stat-box">
+            <i class="fas fa-robot"></i>
+            <h3>AI & ML</h3>
+            <p>Building smart solutions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills section-padding">
+    <div class="container">
+      <h2 class="section-title glitch-text" data-text="< Skills />" data-aos="fade-right">&lt; Skills /&gt;</h2>
+
+      <div class="skills-category">
+        <h3 class="category-title" data-aos="fade-up">Programming & Web</h3>
+        <div class="skills-grid">
+          <!-- HTML -->
+          <div class="skill-item" data-aos="zoom-in" data-aos-delay="100">
+            <div class="progress-circle" data-percentage="90">
+              <svg viewBox="0 0 100 100">
+                <circle class="bg" cx="50" cy="50" r="45"></circle>
+                <circle class="progress" cx="50" cy="50" r="45"></circle>
+              </svg>
+              <div class="circle-inner">
+                <i class="devicon-html5-plain colored"></i>
+                <div class="percentage">0%</div>
+              </div>
+            </div>
+            <h4>HTML</h4>
+          </div>
+          <!-- CSS -->
+          <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+            <div class="progress-circle" data-percentage="87">
+              <svg viewBox="0 0 100 100">
+                <circle class="bg" cx="50" cy="50" r="45"></circle>
+                <circle class="progress" cx="50" cy="50" r="45"></circle>
+              </svg>
+              <div class="circle-inner">
+                <i class="devicon-css3-plain colored"></i>
+                <div class="percentage">0%</div>
+              </div>
+            </div>
+            <h4>CSS</h4>
+          </div>
+          <!-- JavaScript -->
+          <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+            <div class="progress-circle" data-percentage="75">
+              <svg viewBox="0 0 100 100">
+                <circle class="bg" cx="50" cy="50" r="45"></circle>
+                <circle class="progress" cx="50" cy="50" r="45"></circle>
+              </svg>
+              <div class="circle-inner">
+                <i class="devicon-javascript-plain colored"></i>
+                <div class="percentage">0%</div>
+              </div>
+            </div>
+            <h4>JavaScript</h4>
+          </div>
+          <!-- C Language -->
+          <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+            <div class="progress-circle" data-percentage="80">
+              <svg viewBox="0 0 100 100">
+                <circle class="bg" cx="50" cy="50" r="45"></circle>
+                <circle class="progress" cx="50" cy="50" r="45"></circle>
+              </svg>
+              <div class="circle-inner">
+                <i class="devicon-c-plain colored"></i>
+                <div class="percentage">0%</div>
+              </div>
+            </div>
+            <h4>C</h4>
+          </div>
+          <!-- Java -->
+          <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
+            <div class="progress-circle" data-percentage="60">
+              <svg viewBox="0 0 100 100">
+                <circle class="bg" cx="50" cy="50" r="45"></circle>
+                <circle class="progress" cx="50" cy="50" r="45"></circle>
+              </svg>
+              <div class="circle-inner">
+                <i class="devicon-java-plain colored"></i>
+                <div class="percentage">0%</div>
+              </div>
+            </div>
+            <h4>Java</h4>
+          </div>
+          <!-- Python -->
+          <div class="skill-item" data-aos="zoom-in" data-aos-delay="600">
+            <div class="progress-circle" data-percentage="50">
+              <svg viewBox="0 0 100 100">
+                <circle class="bg" cx="50" cy="50" r="45"></circle>
+                <circle class="progress" cx="50" cy="50" r="45"></circle>
+              </svg>
+              <div class="circle-inner">
+                <i class="devicon-python-plain colored"></i>
+                <div class="percentage">0%</div>
+              </div>
+            </div>
+            <h4>Python</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-category" style="margin-top: 5rem;">
+        <h3 class="category-title" data-aos="fade-up">Cyber Security</h3>
+        <div class="skills-grid">
+          <!-- Kali Linux -->
+          <div class="skill-item" data-aos="zoom-in" data-aos-delay="100">
+            <div class="progress-circle" data-percentage="85">
+              <svg viewBox="0 0 100 100">
+                <circle class="bg" cx="50" cy="50" r="45"></circle>
+                <circle class="progress" cx="50" cy="50" r="45"></circle>
+              </svg>
+              <div class="circle-inner">
+                <i class="devicon-linux-plain colored"></i> <!-- Using generic linux icon for Kali -->
+                <div class="percentage">0%</div>
+              </div>
+            </div>
+            <h4>Kali Linux</h4>
+          </div>
+          <!-- Nmap -->
+          <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+            <div class="progress-circle" data-percentage="80">
+              <svg viewBox="0 0 100 100">
+                <circle class="bg" cx="50" cy="50" r="45"></circle>
+                <circle class="progress" cx="50" cy="50" r="45"></circle>
+              </svg>
+              <div class="circle-inner">
+                <i class="fas fa-network-wired" style="color:#2ba246"></i>
+                <div class="percentage">0%</div>
+              </div>
+            </div>
+            <h4>Nmap</h4>
+          </div>
+          <!-- OpenVAS -->
+          <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+            <div class="progress-circle" data-percentage="70">
+              <svg viewBox="0 0 100 100">
+                <circle class="bg" cx="50" cy="50" r="45"></circle>
+                <circle class="progress" cx="50" cy="50" r="45"></circle>
+              </svg>
+              <div class="circle-inner">
+                <i class="fas fa-shield-virus" style="color:#00ff41"></i>
+                <div class="percentage">0%</div>
+              </div>
+            </div>
+            <h4>OpenVAS</h4>
+          </div>
+          <!-- SQLmap -->
+          <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+            <div class="progress-circle" data-percentage="75">
+              <svg viewBox="0 0 100 100">
+                <circle class="bg" cx="50" cy="50" r="45"></circle>
+                <circle class="progress" cx="50" cy="50" r="45"></circle>
+              </svg>
+              <div class="circle-inner">
+                <i class="fas fa-database" style="color:#f29111"></i>
+                <div class="percentage">0%</div>
+              </div>
+            </div>
+            <h4>SQLmap</h4>
+          </div>
+          <!-- Burp Suite -->
+          <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
+            <div class="progress-circle" data-percentage="70">
+              <svg viewBox="0 0 100 100">
+                <circle class="bg" cx="50" cy="50" r="45"></circle>
+                <circle class="progress" cx="50" cy="50" r="45"></circle>
+              </svg>
+              <div class="circle-inner">
+                <i class="fas fa-bug" style="color:#ff6600"></i>
+                <div class="percentage">0%</div>
+              </div>
+            </div>
+            <h4>Burp Suite</h4>
+          </div>
+          <!-- Wireshark -->
+          <div class="skill-item" data-aos="zoom-in" data-aos-delay="600">
+            <div class="progress-circle" data-percentage="85">
+              <svg viewBox="0 0 100 100">
+                <circle class="bg" cx="50" cy="50" r="45"></circle>
+                <circle class="progress" cx="50" cy="50" r="45"></circle>
+              </svg>
+              <div class="circle-inner">
+                <i class="fas fa-water" style="color:#1679a7"></i>
+                <div class="percentage">0%</div>
+              </div>
+            </div>
+            <h4>Wireshark</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Overview -->
+  <section id="tech-stack" class="tech-stack section-padding">
+    <div class="container">
+      <h2 class="section-title glitch-text" data-text="< Tech Stack />" data-aos="fade-right">&lt; Tech Stack /&gt;</h2>
+
+      <div class="stack-grid">
+        <!-- Frontend -->
+        <div class="stack-card" data-aos="flip-left" data-aos-delay="100">
+          <div class="stack-icon"><i class="devicon-html5-plain colored"></i></div>
+          <h3>Frontend</h3>
+          <ul>
+            <li><i class="devicon-html5-plain colored"></i> HTML5</li>
+            <li><i class="devicon-css3-plain colored"></i> CSS3</li>
+            <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+          </ul>
+        </div>
+
+        <!-- Backend -->
+        <div class="stack-card" data-aos="flip-left" data-aos-delay="200">
+          <div class="stack-icon"><i class="devicon-nodejs-plain colored"></i></div>
+          <h3>Backend</h3>
+          <ul>
+            <li><i class="devicon-nodejs-plain colored"></i> Node.js + Express</li>
+            <li><i class="devicon-spring-plain colored"></i> Java Spring Boot</li>
+            <li><i class="devicon-python-plain colored"></i> Python Django / Flask</li>
+            <li><i class="devicon-php-plain colored"></i> PHP Laravel</li>
+          </ul>
+        </div>
+
+        <!-- Database -->
+        <div class="stack-card" data-aos="flip-left" data-aos-delay="300">
+          <div class="stack-icon"><i class="devicon-mysql-plain colored"></i></div>
+          <h3>Database</h3>
+          <ul>
+            <li><i class="devicon-mysql-plain colored"></i> MySQL</li>
+            <li><i class="devicon-mongodb-plain colored"></i> MongoDB</li>
+            <li><i class="devicon-firebase-plain colored"></i> Firebase</li>
+          </ul>
+        </div>
+
+        <!-- DevOps & Deployment -->
+        <div class="stack-card" data-aos="flip-left" data-aos-delay="400">
+          <div class="stack-icon"><i class="devicon-docker-plain colored"></i></div>
+          <h3>DevOps & Cloud</h3>
+          <ul>
+            <li><i class="devicon-git-plain colored"></i> Git & GitHub</li>
+            <li><i class="devicon-docker-plain colored"></i> Docker</li>
+            <li><i class="devicon-amazonwebservices-original colored"></i> AWS</li>
+            <li><i class="devicon-firebase-plain colored"></i> Firebase Hosting</li>
+            <li><i class="fas fa-cloud" style="color:#ffffff"></i> Vercel</li>
+            <!-- No devicon for vercel, using fa-cloud -->
+          </ul>
+        </div>
+
+        <!-- Ethical Hacking -->
+        <div class="stack-card" data-aos="flip-left" data-aos-delay="500">
+          <div class="stack-icon"><i class="fas fa-user-secret" style="color:var(--primary)"></i></div>
+          <h3>Ethical Hacking</h3>
+          <ul>
+            <li><i class="devicon-linux-plain colored"></i> Kali Linux</li>
+            <li><i class="fas fa-network-wired" style="color:#2ba246"></i> Nmap</li>
+            <li><i class="fas fa-bug" style="color:#ff6600"></i> Burp Suite</li>
+            <li><i class="fas fa-spider" style="color:#008f11"></i> Metasploit</li>
+            <li><i class="fas fa-water" style="color:#1679a7"></i> Wireshark</li>
+          </ul>
+        </div>
+
+        <!-- AI / ML -->
+        <div class="stack-card" data-aos="flip-left" data-aos-delay="600">
+          <div class="stack-icon"><i class="fas fa-brain" style="color:#ff00ff"></i></div>
+          <h3>AI & ML Stack</h3>
+          <ul>
+            <li><i class="devicon-python-plain colored"></i> Python</li>
+            <li><i class="devicon-numpy-original colored"></i> NumPy</li>
+            <li><i class="devicon-pandas-original colored"></i> Pandas</li>
+            <li><i class="devicon-tensorflow-original colored"></i> TensorFlow / PyTorch</li>
+            <li><i class="fas fa-sparkles" style="color:#4285F4"></i> Gemini API</li>
+            <li><i class="fas fa-robot" style="color:#00A67E"></i> OpenAI API</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects section-padding">
+    <div class="container">
+      <h2 class="section-title glitch-text" data-text="< Projects />" data-aos="fade-up">&lt; Projects /&gt;</h2>
+
+      <div class="projects-grid">
+        <!-- Project 1: AI Exam Notes -->
+        <div class="project-card" data-tilt data-tilt-glare data-tilt-max-glare="0.5" data-aos="fade-up"
+          data-aos-delay="100">
+          <div class="project-img-wrapper">
+            <!-- Placeholder for actual project image -->
+            <div class="project-img-wrapper">
+              <img src="project.png" alt="AI Exam Notes" class="project-img">
+            </div>
+
+          </div>
+          <div class="project-content">
+            <h3>AI Exam Notes Generator</h3>
+            <p>An intelligent tool that automatically generates high-quality short notes, study materials, and summaries
+              for exams using AI.</p>
+
+            <div class="project-tech">
+              <span><i class="devicon-html5-plain colored"></i> HTML</span>
+              <span><i class="devicon-css3-plain colored"></i> CSS</span>
+              <span><i class="devicon-javascript-plain colored"></i> JS</span>
+              <span><i class="fas fa-sparkles" style="color:#4285F4"></i> Gemini API</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://one-aiexamnotesclient.onrender.com/auth" class="btn btn-primary btn-sm"><i
+                  class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="https://github.com/Mrkuljeet/1.AIExamNotes" class="btn btn-outline btn-sm"><i
+                  class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Personal Portfolio -->
+        <div class="project-card" data-tilt data-tilt-glare data-tilt-max-glare="0.5" data-aos="fade-up"
+          data-aos-delay="300">
+          <div class="project-img-wrapper">
+            <!-- Placeholder for actual project image -->
+            <div class="project-img-wrapper">
+              <img src="portfolio.png" alt="Personal Cyber Portfolio" class="project-img">
+            </div>
+
+          </div>
+          <div class="project-content">
+            <h3>Personal Cyber Portfolio</h3>
+            <p>A highly interactive, cyber-security and AI themed portfolio website featuring matrix backgrounds, 3D
+              tilts, and original tool icons.</p>
+
+            <div class="project-tech">
+              <span><i class="devicon-html5-plain colored"></i> HTML</span>
+              <span><i class="devicon-css3-plain colored"></i> CSS</span>
+              <span><i class="devicon-javascript-plain colored"></i> JS</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline & Resume Section -->
+  <section id="timeline" class="timeline section-padding">
+    <div class="container">
+      <h2 class="section-title glitch-text" data-text="< Journey />" data-aos="fade-right">&lt; Journey /&gt ;</h2>
+
+      <div class="resume-download" data-aos="fade-up">
+        <p>Want to see the full details?</p>
+        <a href="resume.pdf" class="btn btn-primary" download><i class="fas fa-file-download"></i> Download
+          Resume</a>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Item 1 -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2025</div>
+            <h3>Started B.Tech CSE</h3>
+            <p>Joined Rungta International Skill University, Bhilai to build a strong foundation in computer science.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2026</div>
+            <h3>Learning Web Dev + Cyber</h3>
+            <p>Focusing on HTML, CSS, JavaScript, C, and Java while exploring ethical hacking and security
+              vulnerabilities.</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Future</div>
+            <h3>AI + Security Engineer</h3>
+            <p>Combining web development with Artificial Intelligence, Machine Learning, and Cyber Security to build
+              smart, unbreakable applications.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section-padding" style="background: rgba(5,5,16,0.8);">
+    <div class="container">
+      <h2 class="section-title glitch-text" data-text="< Connect />" data-aos="fade-up">&lt; Connect /&gt;</h2>
+
+      <p class="contact-desc" data-aos="fade-up" data-aos-delay="100">Let's build the future together. Whether you have
+        a question or just want to say hi, I'll try my best to get back to you!</p>
+
+      <div class="social-grid">
+        <a href="https://www.linkedin.com/in/kuljeet-c-1703b1383/" target="_blank" class="social-box" data-aos="zoom-in"
+          data-aos-delay="100">
+          <i class="fab fa-linkedin" style="color:#0077b5"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/Mrkuljeet" target="_blank" class="social-box" data-aos="zoom-in"
+          data-aos-delay="200">
+          <i class="fab fa-github" style="color:#ffffff"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.instagram.com/kuljeet_chouriya/" target="_blank" class="social-box" data-aos="zoom-in"
+          data-aos-delay="300">
+          <i class="fab fa-instagram" style="color:#e1306c"></i>
+          <span>Instagram</span>
+        </a>
+        <a href="https://snapchat.com/t/FKgrLht1" target="_blank" class="social-box" data-aos="zoom-in"
+          data-aos-delay="400">
+          <i class="fab fa-snapchat-ghost" style="color:#fffc00"></i>
+          <span>Snapchat</span>
+        </a>
+        <a href="https://youtube.com/@codewithkuljeet?si=AfUzs6yZaV6K-FsX" target="_blank" class="social-box"
+          data-aos="zoom-in" data-aos-delay="500">
+          <i class="fab fa-youtube" style="color:#ff0000"></i>
+          <span>YouTube</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Kuljeet. Built with Pure Logic & Cyber Aesthetic.</p>
+    </div>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Typed.js -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Vanilla Tilt -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+
+  <!-- CountUp JS (Custom implementation in main.js instead of external to keep it light) -->
+
+  <!-- Main Logic -->
+  <script src="main.js"></script>
+</body>
+
+</html>
