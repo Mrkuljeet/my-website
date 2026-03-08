@@ -75,25 +75,9 @@ A cyber-themed responsive portfolio built to showcase skills and technical growt
 
 ---
 
-## 📸 Screenshots
-
-(Add your screenshots here)
-
-```md
-![Home Section](screenshots/home.png)
-![Skills Section](screenshots/skills.png)
-![Projects Section](screenshots/projects.png)
-```
-
----
-
 ## 🚀 Deployment
 
-This project is deployed using:
-
-* Vercel
-  OR
-* Firebase Hosting
+This project is deployed using:  github 
 
 ---
 
