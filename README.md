@@ -21,7 +21,6 @@ B.Tech CSE Student (2025–2029)
 
 I enjoy understanding how technology works and building smart, secure, and useful applications.
 
----
 
 ## ✨ Features
 
@@ -73,13 +72,6 @@ An AI-powered smart notes generation tool for students.
 
 A cyber-themed responsive portfolio built to showcase skills and technical growth.
 
----
-
-## 🚀 Deployment
-
-This project is deployed using:  github 
-
----
 
 ## 📈 Future Improvements
 
