@@ -7,7 +7,7 @@
 
 ---
 
-## 👨‍💻 About Me
+
 
 Hi, I’m **Kuljeet** 👋
 B.Tech CSE Student (2025–2029)
