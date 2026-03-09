@@ -91,6 +91,7 @@ A cyber-themed responsive portfolio built to showcase skills and technical growt
 
 ---
 
+⭐ If you like this project, consider giving it a star!
 
 ---
 
