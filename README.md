@@ -86,7 +86,7 @@ A cyber-themed responsive portfolio built to showcase skills and technical growt
 
 * LinkedIn: https://www.linkedin.com/in/kuljeet-c-1703b1383/
 * GitHub: https://github.com/Mrkuljeet
-* Instagram: https://www.instagram.com/kuljeet_chouriya/
+
 
 ---
 
